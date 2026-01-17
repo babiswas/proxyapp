@@ -39,8 +39,6 @@ RUN go build -o gin-app .
 # ==========================
 FROM alpine:3.18
 
-# Add CA certificates for HTTPS support
-RUN apk add --no-cache ca-certificates
 
 # Set working directory
 WORKDIR /root/
