@@ -21,6 +21,7 @@ func main() {
 
 	logger := logger.LoggingInit()
 
+	logger.Info("Initiallised logger.")
 	logger.Info("Fetching port from enviroment variable.")
 	port := ":" + os.Getenv("PORT")
 
