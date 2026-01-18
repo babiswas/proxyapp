@@ -8,6 +8,7 @@ import (
 )
 
 func LoggerMiddleWare(logger *logrus.Logger) gin.HandlerFunc {
+	logger.Info("Executing logger middleware.")
 	return func(ctx *gin.Context) {
 		start := time.Now()
 		ctx.Next()
